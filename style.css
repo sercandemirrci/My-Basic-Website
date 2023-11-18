@@ -1,0 +1,163 @@
+* {
+    /* (*)Tüm sayfayı kapsar */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    /*Tüm html sayfasını kapsar */
+    font-size: 7px;
+}
+
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    color: #fff;
+    font-size: 1.6rem;
+    /* html içerisinde verilen 10px'i 1.6 ile çarparak boyutu değiştirir */
+    line-height: 1.5;
+    /* Satır arası  boşluk*/
+    text-align: center;
+    background-color: #333;
+}
+
+a {
+    text-decoration: none;
+}
+
+p {
+    padding: 1.6rem 0;
+}
+
+img{
+    width: 100%;
+    height: auto;
+}
+
+.clearfix:after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+header {
+    height: 46rem;
+    /*460px demek*/
+}
+
+header .bg-image {
+    position: absolute;
+    background-image: url(bg.jpg);  /*arka plan fotografını nereden alsın?*/
+    background-size: cover;  /*kapsayıcı demek */
+    background-position: center;
+    height: 46rem;  /*yükseklik şu kadar olsun*/
+    width: 100%;    /* sayfanın tamamını kaplasın*/
+    opacity: 0.5;   /*opaklık solgunluk*/
+    z-index: -1;    /* arka plana almıs olduk */
+}
+
+header h1{
+    padding: 12rem;
+    padding-bottom: 0;
+}
+
+.btn{
+    display: inline-block;
+    background-color: #333;
+    color: white;
+    border: 1px solid #666;
+    border-radius: 15px;
+    padding: 1rem 1.5rem;
+    margin: 0.5rem 0;
+    transition: all 0.5s;  /*Butonun üstüne gelindiğinde renk değiştirme hızı */
+    
+}
+
+.btn:hover{
+    background-color: black;
+    border-color: black;
+    color: white;
+}
+
+#section-a{
+    background-color:lightgrey;
+    color: #333;
+    padding: 3.2rem 5rem;
+
+}
+
+#section-b{
+    padding: 4rem 4rem;
+    margin: 4rem 4rem;
+}
+
+#section-b ul{
+    list-style: none;
+}
+
+#section-b li{
+    background-color: lightgrey;
+    color: #333;
+    margin-bottom: 4rem;
+    
+}
+
+.col-content{
+    padding: 1.5rem;
+}
+
+#section-c{
+    background-color: #eaeaea;
+    color: #333;
+    padding: 5rem;
+}
+
+#section-d .box{
+    padding: 5rem;
+}
+
+#section-d .box:first-child{
+    background-color: darkslategray;
+}
+
+footer{
+    padding: 4rem;
+    background-color: black;
+    color: #fff;
+}
+
+footer a{
+    color: yellowgreen;
+}
+
+section a{
+    color: aqua;
+}
+
+@media screen and (min-width:800px) {  /* min 800 px ve üzerine çıktığında şunları yap */
+    html{
+        font-size: 9px;
+    }
+}
+
+@media screen and (min-width:1200px){
+    html{
+        font-size: 11px;
+    }
+
+    #section-b li{
+        width: 28%;
+        margin: 1%;
+        display: inline-block;
+    }
+
+    .box{
+        width: 50%;
+        float: left;
+    }
+    
+
+    
+
+}
